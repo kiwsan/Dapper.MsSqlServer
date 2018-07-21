@@ -28,7 +28,7 @@ namespace UnitTestProject.Repositorys
         }
 
         [TestCase(1)]
-        public void HierarchyFirstPass_Test(int id)
+        public void FindHierarchyFirstPass_Test(int id)
         {
 
             var unitOfWork = _container.Resolve<IUnitOfWork>();

@@ -51,6 +51,7 @@
     <Reference Include="System.Data.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Repositorys\CustomerAndOrderNUnitTest.cs" />
     <Compile Include="Repositorys\CustomerRepositoryNUnitTest.cs" />
     <Compile Include="Repositorys\OrderRepositoryNUnitTest.cs" />
     <Compile Include="Startup\NUnitTestBase.cs" />

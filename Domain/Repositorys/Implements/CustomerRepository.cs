@@ -18,6 +18,29 @@ namespace Domain.Repositorys.Implements
         {
         }
 
+        public void Add(Customer entity)
+        {
+            if (entity == null)
+                throw new ArgumentNullException("entity");
+
+            entity.Id = Connection.ExecuteScalar<int>(
+                "INSERT INTO Customer(FirstName, LastName, City, Country, Phone" +
+                ") " +
+                "VALUES(@FirstName, @LastName, @City, @Country, @Phone" +
+                "); " +
+                "SELECT SCOPE_IDENTITY()",
+                param: new
+                {
+                    FirstName = entity.FirstName,
+                    LastName = entity.LastName,
+                    City = entity.City,
+                    Country = entity.Country,
+                    Phone = entity.Phone
+                },
+                transaction: Transaction
+            );
+        }
+
         public Customer Find(int id)
         {
 
@@ -61,7 +84,7 @@ namespace Domain.Repositorys.Implements
                 },
                 param: new { Id = id },
                 transaction: Transaction
-            ).FirstOrDefault(); 
+            ).FirstOrDefault();
         }
 
     }

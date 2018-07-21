@@ -14,5 +14,7 @@ namespace Domain.Repositorys.Interfaces
 
         Customer FindHierarchyFirstPass(int id);
 
+        void Add(Customer entity);
+
     }
 }

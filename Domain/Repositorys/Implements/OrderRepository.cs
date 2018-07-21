@@ -18,6 +18,28 @@ namespace Domain.Repositorys.Implements
         {
         }
 
+        public void Add(Order entity)
+        {
+            if (entity == null)
+                throw new ArgumentNullException("entity");
+
+            entity.Id = Connection.ExecuteScalar<int>(
+                "INSERT INTO [dbo].[Order](CustomerId, OrderDate, OrderNumber, TotalAmount" +
+                ") " +
+                "VALUES(@CustomerId, @OrderDate, @OrderNumber, @TotalAmount" +
+                "); " +
+                "SELECT SCOPE_IDENTITY()",
+                param: new
+                {
+                    CustomerId = entity.CustomerId,
+                    OrderDate = entity.OrderDate,
+                    OrderNumber = entity.OrderNumber,
+                    TotalAmount = entity.TotalAmount
+                },
+                transaction: Transaction
+            );
+        }
+
         public Order Find(int id)
         {
             string sql = @"SELECT *

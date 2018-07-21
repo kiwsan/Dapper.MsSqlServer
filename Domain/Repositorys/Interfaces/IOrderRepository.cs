@@ -16,5 +16,7 @@ namespace Domain.Repositorys.Interfaces
 
         IEnumerable<Order> GetAllHierarchyFirstPass();
 
+        void Add(Order entity);
+
     }
 }
