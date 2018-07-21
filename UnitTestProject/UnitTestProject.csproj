@@ -51,7 +51,7 @@
     <Reference Include="System.Data.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Repositorys\CustomerAndOrderNUnitTest.cs" />
+    <Compile Include="Services\CustomerServiceNUnitTest.cs" />
     <Compile Include="Repositorys\CustomerRepositoryNUnitTest.cs" />
     <Compile Include="Repositorys\OrderRepositoryNUnitTest.cs" />
     <Compile Include="Startup\NUnitTestBase.cs" />
@@ -62,6 +62,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Application\Application.csproj">
+      <Project>{84BC879F-7827-4994-AF10-7A26C9287727}</Project>
+      <Name>Application</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Autofac.CrossCutting.IoC\Autofac.CrossCutting.IoC.csproj">
       <Project>{E7DEDD59-32DD-419A-BF0D-4B83B6CA15A3}</Project>
       <Name>Autofac.CrossCutting.IoC</Name>

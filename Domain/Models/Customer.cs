@@ -16,6 +16,16 @@ namespace Domain.Models
 
         }
 
+        public Customer(int id, string firstName, string lastName, string city, string country, string phone)
+        {
+            Id = id;
+            FirstName = firstName;
+            LastName = lastName;
+            City = city;
+            Country = country;
+            Phone = phone;
+        }
+
         public int Id { get; set; }
 
         public string FirstName { get; set; }

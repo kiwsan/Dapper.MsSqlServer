@@ -22,6 +22,15 @@ namespace Application.Dtos
 
         public string Phone { get; set; }
 
+        public CustomerDto(string firstName, string lastName, string city, string country, string phone)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+            City = city;
+            Country = country;
+            Phone = phone;
+        }
+
         public CustomerDto(int id, string firstName, string lastName, string city, string country, string phone)
         {
             Id = id;

@@ -50,6 +50,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Application\Application.csproj">
+      <Project>{84BC879F-7827-4994-AF10-7A26C9287727}</Project>
+      <Name>Application</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Domain\Domain.csproj">
       <Project>{da83b3a3-7a74-4a10-ab2c-3fc1f6ddc2c3}</Project>
       <Name>Domain</Name>

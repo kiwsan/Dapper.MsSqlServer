@@ -11,16 +11,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autofac.CrossCutting.IoC", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{93D41DB4-70DB-4F42-8479-14CFE836BBB2}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dofactory-sample-database", "dofactory-sample-database", "{1AFC79AA-05D7-4D9D-94E8-7E7D322133A7}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\Downloads\Compressed\dofactory-sample-database\sample-data.sql = ..\..\..\Downloads\Compressed\dofactory-sample-database\sample-data.sql
-		..\..\..\Downloads\Compressed\dofactory-sample-database\sample-model.sql = ..\..\..\Downloads\Compressed\dofactory-sample-database\sample-model.sql
-		..\..\..\Downloads\Documents\sql-schema.png = ..\..\..\Downloads\Documents\sql-schema.png
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{84BC879F-7827-4994-AF10-7A26C9287727}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.Core", "Domain.Core\Domain.Core.csproj", "{0B0CBD18-D424-4F17-AA9B-08C6C6D4E8F3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E434B898-437D-4231-B302-96557AC74739}"
+	ProjectSection(SolutionItems) = preProject
+		sample-data.sql = sample-data.sql
+		sample-model.sql = sample-model.sql
+		sql-schema.png = sql-schema.png
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -64,6 +64,23 @@ namespace Infrastructure.Repositorys
             ).FirstOrDefault();
         }
 
+        public Customer FindByName(string firstName, string lastName)
+        {
+            string sql = @"SELECT * 
+                           FROM Customer 
+                           WHERE Customer.FirstName = @FirstName AND LastName = @LastName";
+
+            return Connection.Query<Customer>(
+                sql,
+                param: new
+                {
+                    FirstName = firstName,
+                    LastName = lastName
+                },
+                transaction: Transaction
+            ).FirstOrDefault();
+        }
+
         public Customer FindHierarchyFirstPass(int id)
         {
 

@@ -14,6 +14,8 @@ namespace Domain.Interfaces
 
         Customer FindHierarchyFirstPass(int id);
 
+        Customer FindByName(string firstName, string lastName);
+
         void Add(Customer entity);
 
     }
