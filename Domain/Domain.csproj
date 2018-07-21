@@ -50,27 +50,20 @@
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Supplier.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositorys\Implements\CustomerRepository.cs" />
-    <Compile Include="Repositorys\Implements\OrderItemRepository.cs" />
-    <Compile Include="Repositorys\Implements\OrderRepository.cs" />
-    <Compile Include="Repositorys\Implements\ProductRepository.cs" />
-    <Compile Include="Repositorys\Implements\SupplierRepository.cs" />
-    <Compile Include="Repositorys\Interfaces\ICustomerRepository.cs" />
-    <Compile Include="Repositorys\Interfaces\IOrderItemRepository.cs" />
-    <Compile Include="Repositorys\Interfaces\IOrderRepository.cs" />
-    <Compile Include="Repositorys\Interfaces\IProductRepository.cs" />
-    <Compile Include="Repositorys\Interfaces\ISupplierRepository.cs" />
-    <Compile Include="Repositorys\RepositoryBase.cs" />
-    <Compile Include="Uow\IUnitOfWork.cs" />
-    <Compile Include="Uow\UnitOfWork.cs" />
+    <Compile Include="Interfaces\ICustomerRepository.cs" />
+    <Compile Include="Interfaces\IOrderItemRepository.cs" />
+    <Compile Include="Interfaces\IOrderRepository.cs" />
+    <Compile Include="Interfaces\IProductRepository.cs" />
+    <Compile Include="Interfaces\ISupplierRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\Infrastructure\Infrastructure.csproj">
-      <Project>{93d41db4-70db-4f42-8479-14cfe836bbb2}</Project>
-      <Name>Infrastructure</Name>
+    <ProjectReference Include="..\Domain.Core\Domain.Core.csproj">
+      <Project>{0b0cbd18-d424-4f17-aa9b-08c6c6d4e8f3}</Project>
+      <Name>Domain.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

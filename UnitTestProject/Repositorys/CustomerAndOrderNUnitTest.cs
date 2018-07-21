@@ -1,6 +1,6 @@
 ﻿using Autofac;
 using Domain.Models;
-using Domain.Uow;
+using Infrastructure.Uow;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;

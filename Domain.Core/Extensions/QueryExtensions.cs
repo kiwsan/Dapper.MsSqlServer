@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Infrastructure.Extensions
+namespace Domain.Core.Extensions
 {
 
     //https://www.adamjamesbull.co.uk/words/multi-mapping-one-to-many-relationships-with-dapper-using-a-single-sql-join-statement

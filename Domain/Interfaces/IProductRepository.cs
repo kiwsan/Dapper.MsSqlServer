@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Repositorys.Interfaces
+namespace Domain.Interfaces
 {
     public interface IProductRepository
     {

@@ -1,14 +1,15 @@
-﻿using System;
+﻿using Domain;
+using Domain.Interfaces;
+using Infrastructure.Repositorys;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Domain.Repositorys.Implements;
-using Domain.Repositorys.Interfaces;
 
-namespace Domain.Uow
+namespace Infrastructure.Uow
 {
     public class UnitOfWork : IUnitOfWork
     {

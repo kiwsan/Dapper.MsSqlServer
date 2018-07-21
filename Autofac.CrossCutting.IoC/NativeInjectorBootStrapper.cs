@@ -1,7 +1,4 @@
-﻿using Domain.Repositorys;
-using Domain.Repositorys.Implements;
-using Domain.Repositorys.Interfaces;
-using Domain.Uow;
+﻿using Infrastructure.Uow;
 using System;
 using System.Collections.Generic;
 using System.Data;

@@ -18,6 +18,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dofactory-sample-database",
 		..\..\..\Downloads\Documents\sql-schema.png = ..\..\..\Downloads\Documents\sql-schema.png
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{84BC879F-7827-4994-AF10-7A26C9287727}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.Core", "Domain.Core\Domain.Core.csproj", "{0B0CBD18-D424-4F17-AA9B-08C6C6D4E8F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +44,14 @@ Global
 		{93D41DB4-70DB-4F42-8479-14CFE836BBB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93D41DB4-70DB-4F42-8479-14CFE836BBB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93D41DB4-70DB-4F42-8479-14CFE836BBB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84BC879F-7827-4994-AF10-7A26C9287727}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84BC879F-7827-4994-AF10-7A26C9287727}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84BC879F-7827-4994-AF10-7A26C9287727}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84BC879F-7827-4994-AF10-7A26C9287727}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B0CBD18-D424-4F17-AA9B-08C6C6D4E8F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B0CBD18-D424-4F17-AA9B-08C6C6D4E8F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B0CBD18-D424-4F17-AA9B-08C6C6D4E8F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B0CBD18-D424-4F17-AA9B-08C6C6D4E8F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

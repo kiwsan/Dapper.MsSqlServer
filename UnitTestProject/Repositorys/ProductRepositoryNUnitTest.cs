@@ -1,5 +1,5 @@
 ﻿using Autofac;
-using Domain.Uow;
+using Infrastructure.Uow;
 using NUnit.Framework;
 using System;
 using System.Linq;

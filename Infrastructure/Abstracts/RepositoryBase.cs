@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Repositorys
+namespace Infrastructure.Abstracts
 {
     internal abstract class RepositoryBase
     {

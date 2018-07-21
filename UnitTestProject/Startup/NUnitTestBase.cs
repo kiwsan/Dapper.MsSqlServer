@@ -1,6 +1,5 @@
 ﻿using Autofac;
 using Autofac.CrossCutting.IoC;
-using Domain.Uow;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;

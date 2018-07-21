@@ -1,6 +1,7 @@
 ﻿using Dapper;
+using Domain.Interfaces;
 using Domain.Models;
-using Domain.Repositorys.Interfaces;
+using Infrastructure.Abstracts;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -8,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Repositorys.Implements
+namespace Infrastructure.Repositorys
 {
     internal class ProductRepository : RepositoryBase, IProductRepository
     {
