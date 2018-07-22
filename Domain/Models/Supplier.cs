@@ -9,7 +9,7 @@ namespace Domain.Models
     public class Supplier
     {
 
-        public Supplier()
+        protected Supplier()
         {
 
             TableProducts = new List<Product>();

@@ -34,9 +34,9 @@ namespace Application.Services
 
             _unitOfWork.CustomerRepository.Add(objNewCustomer);
 
-            var objNewOrder1 = new Order { CustomerId = objNewCustomer.Id, OrderDate = DateTime.UtcNow, OrderNumber = "X-12055", TotalAmount = 23.22m };
-            var objNewOrder2 = new Order { CustomerId = objNewCustomer.Id, OrderDate = DateTime.UtcNow, OrderNumber = "X-6521C", TotalAmount = 52.89m };
-            var objNewOrder3 = new Order { CustomerId = objNewCustomer.Id, OrderDate = DateTime.UtcNow, OrderNumber = "X-5SC23", TotalAmount = 112.34m };
+            var objNewOrder1 = new Order(objNewCustomer.Id, DateTime.UtcNow, "X-12055", 23.22m);
+            var objNewOrder2 = new Order(objNewCustomer.Id, DateTime.UtcNow, "X-6521C", 52.89m);
+            var objNewOrder3 = new Order(objNewCustomer.Id, DateTime.UtcNow, "X-5SC23", 112.34m);
 
             _unitOfWork.OrderRepository.Add(objNewOrder1);
             _unitOfWork.OrderRepository.Add(objNewOrder2);

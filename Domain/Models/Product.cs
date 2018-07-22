@@ -9,7 +9,7 @@ namespace Domain.Models
     public class Product
     {
 
-        public Product()
+        protected Product()
         {
 
             TableOrderItems = new List<OrderItem>();

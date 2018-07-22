@@ -9,7 +9,7 @@ namespace Domain.Models
     public class OrderItem
     {
 
-        public OrderItem()
+        protected OrderItem()
         {
 
         }

@@ -9,7 +9,7 @@ namespace Domain.Models
     public class Customer
     {
 
-        public Customer()
+        protected Customer()
         {
 
             TableOrders = new List<Order>();

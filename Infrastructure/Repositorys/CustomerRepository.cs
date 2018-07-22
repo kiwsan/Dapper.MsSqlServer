@@ -55,7 +55,7 @@ namespace Infrastructure.Repositorys
                 sql,
                 p => p.Id,
                 g => g.TableOrders,
-                splitOn: "Id",
+                splitOn: "CustomerId",
                 param: new
                 {
                     Id = id
